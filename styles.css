@@ -1,0 +1,62 @@
+body {
+    font-family: sans-serif;
+}
+
+button {
+    padding: 5px;
+    border-radius: 5px;
+    color: white;
+    background-color: darkgreen;
+    border: none;
+}
+
+
+.error {
+    color: darkred;
+}
+
+.response-card {
+    border-radius: 5px;
+    border: darkgreen 1px solid;
+    padding: 15px;
+}
+
+.subtext {
+    margin: 0;
+    color: rgb(72, 72, 72);
+    display: block;
+    text-align: center;
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+}
+
+.response-title {
+    text-align: center;
+    margin: 10px 0;
+}
+
+.response-btn {
+    margin-top: 10px;
+}
+
+#responses {
+    display: grid;
+    padding: 0 30px;
+    gap: 15px;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+#response-super-title h2 {
+    margin: 15px 0 5px 0;
+}
+#response-super-title p {
+    margin: 0 0 15px 0;
+    color: rgb(72, 72, 72);
+}
+
+#response-super-title #page-change-container {
+    margin: 0 0 15px 0;
+}
