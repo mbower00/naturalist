@@ -1,8 +1,11 @@
-const inputEl = document.getElementById("searchInput")
 
 async function formSubmit() {
-    const query = inputEl.value
-    inputEl.value = ""
+    // used code from:
+    // https://www.w3schools.com/howto/howto_js_get_url.asp
+    // https://developer.mozilla.org/en-US/docs/Web/API/URLSearchParams
+
+    const query = new URLSearchParams(window.location.search).get("search") || "a"
+
     const responsesEl = document.getElementById("responses")
 
     try {
@@ -114,3 +117,6 @@ function generateResponseOnClick(placeId, page) {
         }
     }
 }
+
+
+formSubmit()
